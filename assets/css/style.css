@@ -20,38 +20,58 @@
     background-color: #525252;
 }
 /*----------------------------heading*/
-header{
+header {
     margin: 0;
 }
 
-.heading{
+.heading {
     margin-left: 50px;
 }
 
-.logo{
+.logo {
     background: url("../images/nigel-cv.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 360px;
     transition: all .5s ease-in-out;
-    --moz-transition: all .5s ease-in-out;
-    --webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
 }
 
-.name{
+.name {
     font-family: "Exo", sans-serif;
     font-weight: 100;
     font-size: 46px;
     margin-top: 50px;
-    color: #ffffff;
+    color: #fff;
 }
 
-.title{
+.title {
     font-family: "Roboto", sans-serif;
     font-weight: 200;
     font-size: 28px;
     margin-top: 20px;
     margin-bottom: 90px;
     color: #fff;
+}
+
+.list-inline-item:not(:last-child) {
+    margin: 0;
+}
+
+.menucontainer {
+    font-size: 0;
+    padding: 0;
+}
+
+#nav li {
+    font-size: 14px;
+    padding: 0;
+}
+@media (min-width: 1200px) { /*to fix li padding issue for a links*/
+    .fix-left{
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
