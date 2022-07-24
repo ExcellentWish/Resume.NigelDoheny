@@ -26,6 +26,10 @@
     background-color: #525252;
 }
 
+.bg-color-personal-info {
+    background-color: #f4f4f4;
+}
+
 /*----------------------------Specil padding/margin/text*/
 h1,
 h2,
@@ -34,36 +38,37 @@ h4 {
     margin: 0;
 }
 
-.uppercase{
+.uppercase {
     text-transform: uppercase;
 }
 
-.general-sub{
+.general-sub {
     font-family: "Exo", sans-serif;
     font-weight: 300;
     color: #fafafa;
 }
 
-.inline-block{
+.inline-block {
     display: inline-block;
 }
 
-.row-table{
+.row-table {
     display: table;
 }
 
-.section-column{
+.section-column {
     display: table-cell;
     padding: 0 30px 30px;
     float: none;
 }
 
-.section-heading{
+.section-heading {
     font-family: "Exo", sans-serif;
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 40px;
 }
+
 /*----------------------------heading*/
 header {
     margin: 0;
@@ -157,14 +162,14 @@ header {
 }
 
 /*----------------------------footer*/
-footer{
+footer {
     background-color: #525252;
     color: #fafafa;
     min-height: 120px;
     margin: 0;
 }
 
-.cv-pdf i{
+.cv-pdf i {
     font-size: 18px;
     color: #fafafa;
     text-align: center;
@@ -174,15 +179,16 @@ footer{
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
 }
-.cv-pdf i:hover{
+
+.cv-pdf i:hover {
     color: #e84610;
 }
 
-.social-links{
+.social-links {
     padding-bottom: 15px;
 }
 
-.social-links li a i{
+.social-links li a i {
     width: 32px;
     height: 32px;
     padding: 12px 0;
@@ -198,30 +204,91 @@ footer{
     -o-transition: all 0.35s ease-in-out;
 }
 
-.social-links li a i:hover{
-    background-color: #e84610;;
-    
+.social-links li a i:hover {
+    background-color: #e84610;
+    ;
+
 }
-#footer-details{
+
+#footer-details {
     padding: 20px;
 }
 
 /*----------------------------3 Reasons*/
-.three-reasons-icon{
+.three-reasons-icon {
     font-size: 26px;
     color: #e67e22;
 }
 
-.three-reasons-heading{
+.three-reasons-heading {
     margin-bottom: 15px;
 }
 
+/*----------------------------Personal Info*/
+.personal-info-item {
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
+}
+
+.personal-info-item .key,
+.personal-info-item .value {
+    padding-right: 8px;
+    display: inline-block;
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p {
+    margin: 0;
+}
+
+.personal-info-item .key {
+    width: 30%;
+    margin-right: 21px;
+    padding-top: 2px;
+    vertical-align: top;
+}
+
+.personal-info-item .key p {
+    font-weight: 700;
+}
+
+.personal-info-item .value {
+    position: relative;
+    width: 60%;
+}
+
+/*----------------------------Skills*/
+.progress {
+    position: relative;
+    height: 25px;
+    margin-bottom: 4px;
+}
+
+.progress-type {
+    position: absolute;
+    left: 0px;
+    font-weight: 400;
+    padding: 3px 30px 2px 10px;
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
+}
+
+.progress-section {
+    margin: 40px 20px;
+}
 
 @media (min-width: 1200px) {
 
     /*to fix li padding issue for a links*/
+    
     .fix-left {
         padding-left: 0;
         padding-right: 0;
     }
-}
+
+   /* footer {
+        position: absolute;
+        bottom: 0;
+    }*/
+} 
