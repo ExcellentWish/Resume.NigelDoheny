@@ -196,7 +196,7 @@
         </div>
 
     </footer>
-    <!-- <script>
+    <script>
         var APIkey = "AIzaSyD34LZLAdCrGil2_WHJ3UrO4megPALp8j0";
         function initMap(){
         var map = new google.maps.Map(document.getElementById("map"), {
@@ -207,9 +207,22 @@
             }
         });
     }
-    </script> -->
+    var labels = "ABCDEFGHIJKLMNOPQRSTUV"
+    var locations = [
+        {lat: 40.785091, lng: -73.968285}
+    ]
 
-<script>
+    var markers = locations.map(function(locations, i) {
+        return new google.maps.Marker({
+            position:location,
+            labels: labels[i % labels.length]
+        });
+        // Add a marker clusterer to manage the markers.
+    markerClusters = new MarkerClusterer({ markers, map });
+    })
+    </script>
+
+<!-- <script>
     var map;
     function initMap() {
       map = new google.maps.Map(document.getElementById('map'), {
@@ -217,7 +230,7 @@
         zoom: 8
       });
     }
-  </script>
+  </script> -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD34LZLAdCrGil2_WHJ3UrO4megPALp8j0&callback=initMap"></script>
 
 
