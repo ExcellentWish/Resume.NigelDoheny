@@ -44,6 +44,14 @@ body {
     background-color: #fff;
 }
 
+.ui-menu-color-github {
+    background-color: #1c4a6c;
+}
+
+.ui-menu-color-interests {
+    background-color: #e74c3c;
+}
+
 /*----------------------------Specil padding/margin/text*/
 h1,
 h2,
@@ -184,19 +192,19 @@ footer {
     margin: 0;
 }
 
-.cv-pdf i {
-    font-size: 18px;
+footer .cv-pdf i {
     color: #fafafa;
     text-align: center;
+    font-size: 18px;
     padding-left: 5px;
+}
+
+footer .cv-pdf i:hover {
+    color: #e84610;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
-}
-
-.cv-pdf i:hover {
-    color: #e84610;
 }
 
 .social-links {
@@ -212,7 +220,7 @@ footer {
     line-height: 7px;
     text-align: center;
     color: #fafafa;
-    background-color: #8f8f8f;
+    background: #8f8f8f;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -220,13 +228,11 @@ footer {
 }
 
 .social-links li a i:hover {
-    background-color: #e84610;
-    ;
-
+    background: #e84610;
 }
 
 #footer-details {
-    padding: 20px;
+    margin: 20px;
 }
 
 /*----------------------------3 Reasons*/
