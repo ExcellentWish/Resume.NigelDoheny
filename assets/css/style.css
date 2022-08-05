@@ -393,3 +393,6 @@ button[type="submit"] {
         bottom: 0;
     }*/
 }
+
+/*-------------------------MAp*/
+div#map {min-height: 360px;}
