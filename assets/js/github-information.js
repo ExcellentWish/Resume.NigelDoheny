@@ -28,23 +28,20 @@ function fetchGitHubInformation(event) {
     // everything up will create a loading animation 
     // Below is promises 
     $.when(
-        $.getJSON(`https://api.github.com/${username}`)
+        $.getJSON(`https://api.github.com/users/${username}`)
     ).then(
-        function (response) {
+        function(response) {
             var userData = response;
             $("#gh-user-data").html(userInformationHTML(userData));
         },
-        function (erroResponse) {
-            if (erroResponse.status === 404) {
-
-                $("#gh-user-data").html(`<h2>No info found for user ${username}</h2>`);
-
+        function(errorResponse) {
+            if (errorResponse.status === 404) {
+                $("#gh-user-data").html(
+                    `<h2>No info found for user ${username}</h2>`);
             } else {
                 console.log(errorResponse);
                 $("#gh-user-data").html(
-                    `<h2> Error: ${erroResponse.responseJSON.message}</h2>`
-                )
+                    `<h2>Error: ${errorResponse.responseJSON.message}</h2>`);
             }
-        }
-    )
+        });
 }
